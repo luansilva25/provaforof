@@ -7,13 +7,21 @@
     */
 
     //Entrada
-
-
+   
+   
     //Processamento
-
-
+    const informe1 = prompt('informe cinco numeros')
+    const informe2 = prompt('informe cinco numeros')
+    const informe3 = prompt('informe cinco numeros')
+    const informe4 = prompt('informe cinco numeros')
+    const informe5 = prompt('informe cinco numeros')
+    let lista = [informe1,informe2,informe3,informe4,informe5]
+    
+for (const iterator of lista) {
+    lista.sort((a,b) => b-a)
+}
     //Saída
-
+alert(`o segundo maior é ${lista[1]} e o segundo menor é ${lista[3]}`)
 
     /*
     Um exemplo de lista com 5 números: let lista = [5, 9, 7, 15, 12]

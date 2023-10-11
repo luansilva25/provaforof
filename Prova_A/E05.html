@@ -8,10 +8,32 @@
     */
 
     //Entrada
-
+    let listaNomes = ["José da Silva", "Maria da Graça", "João de Oliveira", "Marisa Soares", "José Pereira", "Oscar Schmidt", "Regina Duarte", "José Silveira"];
+    let fem = []
+    let masc =[]
+    let josé = 0
 
     //Processamento
+for (const iterator of listaNomes) {
+    const pergunta = prompt(`informe se esse nome é ${iterator} M-masculino F-feminino`)
+    const jose = prompt(`o nome anterior possui josé S-sim N-não`)
 
+    if(pergunta == 'm' && jose == 's'){
+        masc.push(iterator)
+        josé++
+    }
+    else if(pergunta == 'm' && jose == 'n'){
+       masc.push(iterator)
+    }
+    else if(pergunta == 'f' && jose == 's'){
+        alert('esse nome é feminino')
+        fem.push(iterator)
+    }
+    else{
+        fem.push(iterator)
+    }
+}
+alert(` os nomes masculinos são ${masc} \nos nomes que possuem josé são ${josé} \nos nomes femininos são ${fem}`)
 
     //Saída
 

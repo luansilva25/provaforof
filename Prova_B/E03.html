@@ -8,13 +8,23 @@
     */
 
     //Entrada
-
+    let notas = []
+    let média = 0
 
     //Processamento
+    for (let i = 0; i < 3; i++) {
+   const informe = Number(prompt('informe as tres notas'))
+   notas.push(informe)
+    
+}
 
+for (const iterator of notas) {
+    média += iterator 
+}
 
+notas.sort((a,b) => b-a)
     //Saída
-
+alert(`as notas foram ${notas} a média das turmas foram ${média / notas.length}  e a mais alta foi ${notas[0]}`)
 
     /*
     Exemplo:

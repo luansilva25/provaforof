@@ -8,11 +8,22 @@
     */
 
     //Entrada
-
+    let lista = [3.5, 4.2, 5, 8, 9.3, 7];
+    let inteiros = []
+    let decimais=[]
+    let soma = 0
 
     //Processamento
-
-
+for (const iterator of lista) {
+    if(Number.isInteger(iterator)){
+        inteiros.push(iterator)
+    }
+    else{
+        decimais.push(iterator)
+        soma += iterator
+    }
+}
+alert(soma)
     //Saída
 
 

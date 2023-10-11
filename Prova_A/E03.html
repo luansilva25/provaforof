@@ -8,11 +8,18 @@
     */
 
     //Entrada
-
+    let listaNumeros = [8, 9, 10, 12, 15, 18, 21];
+    let pares = []
+    let soma = 0
 
     //Processamento
-
-
+for (const iterator of listaNumeros) {
+    if(iterator % 2 === 0){
+        pares.push(iterator)
+        soma += iterator
+    }
+}
+alert(`a soma deles é ${soma} e a lista possui ${pares.length}`)
     //Saída
 
 
